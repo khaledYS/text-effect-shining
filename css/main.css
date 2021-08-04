@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.con1{
+    overflow: hidden;
+    height: 100vh;
+}
+h1{
+    line-height: 100vh;
+    text-align: center;
+    font-size: 4rem;
+    font-family: sans-serif;
+}
+span{
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(50px);
+    display: inline-block;
+    color: rgb(161, 119, 119);
+}
+span.done{
+    opacity: 1;
+    transform: translateY(0px);
+    animation: changeColor 0.4 ease-in;
+    animation-delay:2.5s ;
+    color:brown;
+}
+@keyframes changeColor {
+    to{
+        color: brown;
+    }
+}
+span.done:hover{
+    transform: scale(1.3) translateY(0px);
+}
+.con2{
+    height: 100vh;
+    width: 100%;
+}
